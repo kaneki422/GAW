@@ -1,0 +1,261 @@
+/* Custom CSS for Urban Garbage Detection System */
+
+:root {
+    --primary-color: #ffc107;
+    --secondary-color: #6c757d;
+    --dark-color: #1a1a1a;
+    --warning-border: 2px solid #ffc107;
+}
+
+/* General Styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #e0e0e0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: translateX(5px);
+    color: #ffc107 !important;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1.5rem !important;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 193, 7, 0.2);
+    color: #ffc107 !important;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 193, 7, 0.3);
+    border-bottom: 3px solid #ffc107;
+}
+
+/* Background Gradients */
+.bg-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+/* Card Styling */
+.card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 193, 7, 0.2);
+}
+
+.card.border-warning {
+    border-width: 2px !important;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Hero Section */
+.display-4 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+/* H3 and H5 Styling */
+h3 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+/* Project Highlights Section */
+.card .fa-icon {
+    transition: all 0.3s ease;
+}
+
+.card:hover .fa-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 8px;
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+    border: 2px solid #444 !important;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background-color: #2d2d2d !important;
+    border-color: #ffc107 !important;
+    color: #ffc107 !important;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.3);
+}
+
+.form-label {
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+}
+
+/* Button Styling */
+.btn-warning {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #000 !important;
+    font-weight: 600;
+    padding: 0.75rem 2.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-warning:hover {
+    background-color: #ffb300 !important;
+    border-color: #ffb300 !important;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.5);
+}
+
+.btn-warning:active {
+    transform: translateY(-1px);
+}
+
+/* List Styling */
+.list-unstyled li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.fa-check-circle {
+    color: #ffc107;
+    margin-right: 0.5rem;
+}
+
+/* Team Section */
+.team-image-placeholder {
+    border-bottom: 3px solid #ffc107;
+    transition: all 0.3s ease;
+}
+
+.card:hover .team-image-placeholder {
+    background-color: rgba(255, 193, 7, 0.1) !important;
+}
+
+/* Result Section */
+.text-danger {
+    color: #ff6b6b !important;
+    font-weight: 600;
+}
+
+.text-success {
+    color: #51cf66 !important;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    margin-top: 5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn-warning {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-body {
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Smooth scrolling sections */
+section {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(255, 193, 7, 0.1);
+}
+
+/* Text Utility Styling */
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.text-light {
+    color: #e0e0e0 !important;
+}
+
+/* Border styling */
+.border-warning {
+    border-color: #ffc107 !important;
+}
+
+/* Shadow effects */
+.shadow-lg {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+}
